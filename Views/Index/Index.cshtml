@@ -1,0 +1,26 @@
+﻿@model IEnumerable<MVCSandbox.Models.IndexModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>This is the Index</h2>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Description</td>
+            <td>Comments</td>
+        </tr>
+    </thead>
+    @foreach (MVCSandbox.Models.IndexModel item in Model)
+    { 
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Description</td>
+            <td>@item.Comments</td>
+            <td>@Html.ActionLink("Click here to edit", "Edit")</td>
+        </tr>
+    }
+</table>
