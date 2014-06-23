@@ -22,6 +22,9 @@ namespace MVCSandbox.Controllers
                 Comments = "This is the first instance of the model"
             };
 
+
+            // test
+
             // Create the second item within the list
             IndexModel newIndexModel2 = new IndexModel
             {
